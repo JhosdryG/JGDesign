@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <script
+      src="https://kit.fontawesome.com/374789a536.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Retro World</title>
+  </head>
+  <body>
+    <header class="header" id="inicio">
+      <div class="overlay"></div>
+      <nav class="nav">
+        <div class="container">
+          <a href="#inicio" class="logo"
+            ><img src="images/retro logo.jpeg" alt="logo" class="logo_img"
+          /></a>
+          <ul class="menu">
+            <li class="menu_item">
+              <a href="#inicio" class="menu_link">Inicio</a>
+            </li>
+            <li class="menu_item">
+              <a href="#slider" class="menu_link">Artistas</a>
+            </li>
+            <li class="menu_item">
+              <a href="#albums" class="menu_link">Top Albums</a>
+            </li>
+            <li class="menu_item">
+              <a href="#games" class="menu_link">Juegos</a>
+            </li>
+            <li class="menu_item">
+              <a href="#contacto" class="menu_link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="slider" class="slider">
+        <!-- BOTTOM BUTTONS -->
+        <div class="button_box">
+          <div class="button" data-element-button="elton"></div>
+          <div class="button" data-element-button="jackson"></div>
+          <div class="button" data-element-button="madonna"></div>
+          <div class="button active" data-element-button="cindy"></div>
+        </div>
+        <!-- ARROW BUTTONS -->
+        <div class="arrow_button_container">
+          <div id="arrow_left" class="arrow_button">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <div id="arrow_right" class="arrow_button">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+        <!-- SLIDER CONTAINER -->
+        <div class="slider_container" id="slider_container">
+          <!-- ELEMENT 1 -->
+          <div data-element="elton" class="elton">
+            <div class="overlay brown"></div>
+            <div class="content">
+              <h2>Elton John</h2>
+              <p>
+                The RocketMan
+              </p>
+            </div>
+          </div>
+          <!-- ELEMENT 2 -->
+          <div data-element="jackson" class="jackson">
+            <div class="overlay brown"></div>
+            <div class="content">
+              <h2>Michael Jackson</h2>
+              <p>
+                El rey del Pop
+              </p>
+            </div>
+          </div>
+          <!-- ELEMENT 3 -->
+          <div data-element="madonna" class="madonna">
+            <div class="overlay brown"></div>
+            <div class="content">
+              <h2>Madonna</h2>
+              <p>
+                La reina del Pop
+              </p>
+            </div>
+          </div>
+          <!-- ELEMENT 4 -->
+          <div data-element="cindy" class="cindy">
+            <div class="overlay brown"></div>
+            <div class="content">
+              <h2>Cindy Lauper</h2>
+              <p>
+                Girls just want to have fun
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="albums" id="albums">
+        <div class="overlay"></div>
+        <div class="container">
+          <!-- Album 1 -->
+          <div class="album">
+            <div class="imgbox">
+              <div class="overlay white"></div>
+              <img src="images/album1.jpg" alt="" class="album-img" />
+            </div>
+            <div class="album-title">
+              <h2 class="album-name">Madonna</h2>
+              <h3 class="author">Madonna</h3>
+            </div>
+            <p class="album-text">
+              Después de que la fiebre disco de la ciudad de Nueva York de la
+              década de 1970 murió, una bulliciosa Madonna empujó sus demos por
+              los lugares de reunión del centro hasta que escuchó la palabra
+              "sí". Bailarina y empleada de Dunkin Donuts con los ojos puestos
+              en la dominación global, consiguió un acuerdo con Sire Records y
+              no iba a dejar que nadie le dijera qué hacer. ¿Qué demonios
+              llevaba ella? ¿Por qué sonaba como Minnie Mouse? ¿Y no estaba
+              bailando? No importa: si Madonna lo dijo, Madonna lo entendió.
+            </p>
+          </div>
+          <!-- Album 1 -->
+          <!-- Album 2 -->
+          <div class="album">
+            <div class="imgbox">
+              <div class="overlay white"></div>
+              <img src="images/album2.jpg" alt="" class="album-img" />
+            </div>
+            <div class="album-title">
+              <h2 class="album-name">Remain in Light</h2>
+              <h3 class="author">Talking Heads</h3>
+            </div>
+            <p class="album-text">
+              Al comienzo del glorioso carnaval políglota que es Permanecer en
+              la luz, David Byrne grita: "Soy un vaso". El cuarto álbum de
+              Talking Heads parece moverse de manera similar, tan ansioso y
+              acelerado que, a veces, todo lo que puede hacer es impulsar su
+              propio impulso. Es la destilación de la curiosidad abierta de
+              cuatro punks del arte neoyorquino por otras culturas, basada en
+              una ansiedad tranquila y vinculante. Grabado en los estudios
+              Compass Point de Nassau, es la cosa menos escalofriante de unas
+              vacaciones en las Bahamas, y tenemos más suerte.
+            </p>
+          </div>
+          <!-- Album 2 -->
+          <!-- Album 3 -->
+          <div class="album">
+            <div class="imgbox">
+              <div class="overlay white"></div>
+              <img src="images/album3.jpg" alt="" class="album-img" />
+            </div>
+            <div class="album-title">
+              <h2 class="album-name">Straight Outta Compton</h2>
+              <h3 class="author">N.W.A.</h3>
+            </div>
+            <p class="album-text">
+              Directamente de Compton golpeó la tierra como un meteorito, su
+              impacto se extendió a través del rap hacia la cultura y la
+              política pop. El álbum no inventó el rap gangsta, pero llevó a las
+              gangstas a las listas de éxitos y directamente a la imaginación
+              del público, donde rápidamente se estamparon con pegatinas de
+              asesoramiento de los padres, un acto descaradamente racista que
+              hizo poco para detener su adquisición. El "rap de la realidad" de
+              N.W.A., informado desde dentro de los ghettos de Los Ángeles,
+              cambió los tonos, las texturas y el alcance del hip-hop para
+              siempre
+            </p>
+          </div>
+          <!-- Album 3 -->
+          <!-- Album 4 -->
+          <div class="album">
+            <div class="imgbox">
+              <div class="overlay white"></div>
+              <img src="images/album4.jpg" alt="" class="album-img" />
+            </div>
+            <div class="album-title">
+              <h2 class="album-name">Thriller</h2>
+              <h3 class="author">Michael Jackson</h3>
+            </div>
+            <p class="album-text">
+              Thriller es uno de los álbumes más vendidos que se haya hecho, y
+              salvo un cambio masivo e imprevisto de regreso a la propiedad
+              musical tradicional, seguirá así hasta el final de la humanidad.
+              Los oyentes que exploran la historia de la música pop aún
+              encontrarán su camino hacia Thriller dentro de cientos de años,
+              muchos de ellos desconocen el contexto: el estrellato preexistente
+              de Michael Jackson, el advenimiento de MTV, el poder del
+              monocultivo en una era fuera de línea, que permitió El loco éxito
+              del álbum.
+            </p>
+          </div>
+          <!-- Album 4 -->
+        </div>
+      </section>
+      <section id="games">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="games-grid">
+            <div class="game">
+              <div class="img-game-box">
+                <div class="overlay"></div>
+                <img src="images/game1.png" alt="pac-man" class="game-img" />
+              </div>
+              <div class="div gtitle">
+                <h3 class="game-title">Pac Man</h3>
+              </div>
+            </div>
+            <div class="game">
+              <div class="img-game-box">
+                <div class="overlay"></div>
+                <img
+                  src="images/game2.jpg"
+                  alt="Space Invader"
+                  class="game-img"
+                />
+              </div>
+
+              <div class="div gtitle">
+                <h3 class="game-title">Space Invaders</h3>
+              </div>
+            </div>
+            <div class="game">
+              <div class="img-game-box">
+                <div class="overlay"></div>
+                <img src="images/game3.jpg" alt="sad" class="game-img" />
+              </div>
+              <div class="div gtitle">
+                <h3 class="game-title">Galaga</h3>
+              </div>
+            </div>
+            <div class="game">
+              <div class="img-game-box">
+                <div class="overlay"></div>
+                <img src="images/game4.jpg" alt="Megaman" class="game-img" />
+              </div>
+              <div class="div gtitle">
+                <h3 class="game-title">Megaman</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacto">
+        <div class="container">
+          <h2 class="section-title">Conctato</h2>
+          <form action="" class="form">
+            <label for="name">
+              Nombre:
+              <input type="text" />
+            </label>
+            <label for="lastname">
+              Apellido:
+              <input type="text" />
+            </label>
+            <label for="age">
+              Edad
+              <input type="text" />
+            </label>
+            <label>
+              Comentarios
+              <textarea></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <a href="#inicio">
+      <i class="fas fa-arrow-up up"></i>
+    </a>
+    <div class="social">
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+    <script src="slider.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.curiosidades-desc {
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 1.2rem;
+}
+
+.curiosidades {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.curiosidad {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+  padding: 15px;
+}
+
+.curiosidad-title {
+  font-size: 1.1rem;
+  color: #303030;
+  font-weight: bold;
+}

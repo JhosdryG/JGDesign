@@ -1,0 +1,66 @@
+.exponentes-grid {
+  display: grid;
+  margin-top: 30px;
+  padding: 30px;
+  grid-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'leonardo .'
+    'leonardo galileo'
+    'miguel galileo'
+    'miguel marco'
+    '. marco';
+}
+
+.leonardo {
+  grid-area: leonardo;
+}
+
+.galileo {
+  grid-area: galileo;
+}
+
+.miguel {
+  grid-area: miguel;
+}
+
+.marco {
+  grid-area: marco;
+}
+
+.exponente {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 0 10px #047f2d8e;
+}
+
+.exponente-name {
+  align-self: flex-start;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  color: #047f2e;
+}
+
+.exponente-img {
+  text-align: center;
+  width: 50%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 5px solid #047f2e;
+}
+
+.exponente-desc {
+  text-align: justify;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+  .exponentes-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'leonardo' 'galileo' 'miguel' 'marco';
+  }
+}

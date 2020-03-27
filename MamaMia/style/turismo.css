@@ -1,0 +1,49 @@
+.main {
+  margin-top: 80px;
+}
+
+.title {
+  margin: 20px;
+  font-size: 3rem;
+  color: #047f2e;
+  text-align: center;
+}
+
+.section {
+  margin: 40px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #047f2e;
+  margin-bottom: 10px;
+  width: 100%;
+  border-bottom: 2px solid #047f2e;
+}
+
+.markpoints {
+  display: flex;
+}
+
+.markpoint {
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 50%;
+}
+
+.markpoint_img {
+  max-height: 300px;
+  border-radius: 5px;
+}
+
+.markpoint_title {
+  margin: 15px 0;
+  font-size: 1.4rem;
+  color: #047f2e;
+}
+
+.markpoint_desc {
+  line-height: 30px;
+  text-align: justify;
+}

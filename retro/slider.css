@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.slider:hover .arrow_button_container,
+.slider:hover .button_box {
+  opacity: 1;
+}
+
+.button_box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.button {
+  height: 15px;
+  width: 50px;
+  background-color: gray;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #c8c8c8;
+}
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.active {
+  background-color: #c8c8c8;
+  transform: scale(1.2);
+}
+
+.slider_container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: all 0.8s ease-in-out;
+}
+.slider_container [data-element] {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.slider_container [data-element] .content {
+  z-index: 2;
+}
+.slider_container [data-element]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.slider_container [data-element] .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.arrow_button_container {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 20px;
+  top: 50%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 1s;
+}
+.arrow_button_container .arrow_button {
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #dda751;
+  transition: 0.3s;
+}
+.arrow_button_container .arrow_button:hover {
+  background-color: #ab5836;
+  transform: scale(1.2);
+}
+
+[data-element] .content {
+  color: #dda751;
+}
+
+[data-element] .content h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  margin-bottom: 0;
+}
+[data-element] .content p {
+  font-size: 30px;
+  padding: 0 30px;
+  text-align: center;
+}
